@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Code Juggernaut - Browser Manager</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This software is programmed to execute JavaScript code automatically without any manual intervention.">
+	<meta property="og:title" content="Code Juggernaut - Browser Manager">
+	<meta property="og:description" content="This software is programmed to execute JavaScript code automatically without any manual intervention.">
+	<!-- <meta property="og:image" content="https://www.example.com/image.jpg">
+	<meta property="og:url" content="https://www.example.com/page"> -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/logos/favicon.png" type="image/png">
+	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<div class="shadow-layer"></div>
+	<div class="hand-wrap pressable">
+		<img class="hand unselect" src="images/illustrations/main/light/hand.svg" data-ondark='{"changeSrc":"images/illustrations/main/dark/hand.svg"}' data-onlight='{"changeSrc":"images/illustrations/main/light/hand.svg"}' data-scrollto=".about" alt="Hand">
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__row df">
+					<div class="header__column header__column_1 df">
+						<div class="header__logo-wrap">
+							<img class="header__logo pressable unselect" src="images/logos/logo.svg" data-scrollto=".main" data-ondark='{"changeSrc":"images/logos/logo_light.svg"}' data-onlight='{"changeSrc":"images/logos/logo.svg"}' alt="Code Juggernaut">
+						</div>
+					</div>
+					<div class="header__column header__column_2 df">
+						<div class="header__nav-wrap">
+							<nav class="header__nav df">
+								<div class="header__nav-row df">
+									<ul class="header__list df">
+										<li class="header__list-item header__list-item_1 header__list-item_right-side pressable" data-scrollto=".main">
+											<span class="header__list-item-name">Main</span>
+										</li>
+										<li class="header__list-item header__list-item_2 header__list-item_left-side pressable" data-scrollto=".about">
+											<span class="header__list-item-name">About</span>
+										</li>
+										<li class="header__list-item header__list-item_3 header__list-item_left-side pressable" data-scrollto=".partners">
+											<span class="header__list-item-name">Partners</span>
+										</li>
+										<li class="header__list-item header__list-item_4 header__list-item_left-side pressable" data-scrollto=".faq">
+											<span class="header__list-item-name">FAQ</span>
+										</li>
+									</ul>
+									<div class="header__panel df">
+										<div class="header__link-wrap">
+											<a class="header__link btn btn_fill" href="/service" target="_blank">
+												<span class="btn__name">Start</span>
+											</a>
+										</div>
+										<div class="header__tool-wrap df">
+											<div class="header__tool">
+												<button class="header__tool-btn" id="theme-switch">
+													<span class="header__tool-btn-icon icon-moon"></span>
+													<span class="header__tool-btn-icon icon-sun"></span>
+													<span class="header__tool-btn-icon_hided icon-moon"></span>
+												</button>
+											</div>
+											<div class="header__tool">
+												<button class="header__tool-btn"><span class="icon-en"></span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<div class="header__burger-wrap">
+							<button class="burger pressable">
+								<span class="burger__span burger__span_1"></span>
+								<span class="burger__span burger__span_2"></span>
+								<span class="burger__span burger__span_3"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="main">
+		<div class="container">
+			<div class="main__wrapper df">
+				<div class="main__content">
+					<h1 class="main__title title">Manage websites at the click of your fingers</h1>
+					<div class="main__text-wrap">
+						<p class="main__text paragraph"><span class="medium">Code Juggernaut</span> offers numerous possibilities when you surfing in the Internet. By simply writing JavaScript code, this soft can be set to run automatically without any actions.</p>
+					</div>
+					<div class="main__btn-wrap">
+						<button class="main__btn btn btn_fill pressable" data-scrollto=".about">
+							<span class="btn__name">Continue</span>
+						</button>
+					</div>
+				</div>
+				<div class="main__illustration-wrap illustration">
+					<img class="main__illustration illustration__image unselect" src="images/illustrations/main/light/main-ill.svg" data-ondark='{"changeSrc":"images/illustrations/main/dark/main-ill.svg"}' data-onlight='{"changeSrc":"images/illustrations/main/light/main-ill.svg"}' data-parallax='{"available":"true","amount":0.1,"deference":80}' alt="Illustration">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<div class="about__wrapper df">
+				<div class="about__content">
+					<h2 class="about__title title title_h2">What’s the idea of extension?</h2>
+					<div class="about__text-wrap">
+						<p class="about__text paragraph">This extension allows to run your code of any websites. You may write the code then manage URLs to process your code on the right websites.</p>
+					</div>
+					<div class="about__advantages">
+						<h3 class="about__advantages-title">How it’s can be useful?</h3>
+						<div class="about__advantages-row df">
+							<div class="about__advantages-column about__advantages-column_1 df">
+								<div class="about__advantages-item df">
+									<div class="about__advantages-check-wrap">
+										<span class="about__advantages-check item-decoration unselect">
+											<span class="icon-check"></span>
+										</span>
+									</div>
+									<div class="about__advantages-text-wrap">
+										<div class="about__advantages-text paragraph">It assists in automating your browser</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__advantages-column about__advantages-column_2 df">
+								<div class="about__advantages-item df">
+									<div class="about__advantages-check-wrap">
+										<span class="about__advantages-check item-decoration unselect">
+											<span class="icon-check"></span>
+										</span>
+									</div>
+									<div class="about__advantages-text-wrap">
+										<div class="about__advantages-text paragraph">This extension allow to create new color schemes</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__advantages-column about__advantages-column_3 df">
+								<div class="about__advantages-item df">
+									<div class="about__advantages-check-wrap">
+										<span class="about__advantages-check item-decoration unselect">
+											<span class="icon-check"></span>
+										</span>
+									</div>
+									<div class="about__advantages-text-wrap">
+										<div class="about__advantages-text paragraph">It helps to save time both for work and leisure</div>
+									</div>
+								</div>
+							</div>
+							<div class="about__advantages-column about__advantages-column_4 df">
+								<div class="about__advantages-item df">
+									<div class="about__advantages-check-wrap">
+										<span class="about__advantages-check item-decoration unselect">
+											<span class="icon-check"></span>
+										</span>
+									</div>
+									<div class="about__advantages-text-wrap">
+										<div class="about__advantages-text paragraph">It aids in advancing your proficiency in JavaScript</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="about__link-wrap">
+						<a class="about__link btn btn_fill extension-install-link df" href="#">
+							<span class="btn__name">Free Install</span>
+							<span class="icon-install"></span>
+						</a>
+					</div>
+				</div>
+				<div class="about__illustration-wrap illustration">
+					<img class="about__illustration illustration__image unselect" src="images/illustrations/about/light/about-ill.svg" data-ondark='{"changeSrc":"images/illustrations/about/dark/about-ill.svg"}' data-onlight='{"changeSrc":"images/illustrations/about/light/about-ill.svg"}' data-parallax='{"available":"true","amount":0.1,"deference":100}' alt="Illustration">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="partners">
+		<div class="container">
+			<div class="partners__wrapper df">
+				<div class="partners__content">
+					<h2 class="partners__title title title_h2">We working with large companies</h2>
+					<div class="partners__text-wrap">
+						<p class="partners__text paragraph">Our project has formed strong partnerships with leading companies such as <a class="partners__text-partner" href="https://yandex.ru/cup/" target="_blank">Yandex Cup</a> and <a class="partners__text-partner" href="https://skillbox.ru" target="_blank">SkillBox</a> to deliver cutting-edge solutions to our clients.</p>
+						<p class="partners__text paragraph">Collaborating with partners enables us to stay up-to-date with the latest technologies, and provide exceptional services to our customers.</p>
+					</div>
+					<div class="partners__link-wrap">
+						<a class="partners__link btn btn_fill extension-install-link" href="#">
+							<span class="btn__name">Try with us</span>
+						</a>
+					</div>
+				</div>
+				<div class="partners__illustration illustration">
+					<img class="partners__illustration illustration__image unselect" src="images/illustrations/partners/light/partners-ill.png" data-ondark='{"changeSrc":"images/illustrations/partners/dark/partners-ill.png"}' data-onlight='{"changeSrc":"images/illustrations/partners/light/partners-ill.png"}' data-parallax='{"available":"true","amount":0.1,"deference":100}' alt="Illustration">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="faq" style="height: 100vh;">
+		<div class="container">
+			FAQ
+		</div>
+	</section>
+	<noscript class="noscript">
+		<div class="noscript__wrapper df">
+			<div class="noscript__message df">
+				<p class="noscript__title">This website requires JavaScript to function properly. Please <a class="noscript__title-link" title="How to enable JavaScript" href="https://yandex.com/support/common/browsers-settings/browsers-java-js-settings.html" target="_blank">enable JavaScript</a> in your browser settings and refresh the page.</p>
+			</div>
+		</div>
+	</noscript>
+	<div class="scroll-line"></div>
+	<div style="width:100%; height:170vh;"></div>
+	<div style="width:100%; height:170vh;"></div>
+	<script src="scripts/main.js"></script>
+</body>
+</html>
