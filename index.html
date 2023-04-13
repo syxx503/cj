@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- TODO -->
+<!-- Error/Warning в форме для input -->
 <html lang="en">
 <head>
 	<title>Code Juggernaut - Browser Manager</title>
@@ -48,7 +50,7 @@
 									</ul>
 									<div class="header__panel df">
 										<div class="header__link-wrap">
-											<a class="header__link btn btn_fill" href="/service" target="_blank">
+											<a class="header__link btn btn_fill pressable" href="/service" target="_blank">
 												<span class="btn__name">Our Service</span>
 											</a>
 										</div>
@@ -167,7 +169,7 @@
 						</div>
 					</div>
 					<div class="about__link-wrap">
-						<a class="about__link btn btn_fill extension-install-link df" href="#">
+						<a class="about__link btn btn_fill pressable extension-install-link df" href="#">
 							<span class="btn__name">Free Install</span>
 							<span class="icon-install"></span>
 						</a>
@@ -189,7 +191,7 @@
 						<p class="partners__text paragraph">Collaborating with partners enables us to stay up-to-date with the latest technologies, and provide exceptional services to our customers.</p>
 					</div>
 					<div class="partners__link-wrap">
-						<a class="partners__link btn btn_fill extension-install-link" href="#">
+						<a class="partners__link btn btn_fill pressable extension-install-link" href="#">
 							<span class="btn__name">Try with us</span>
 						</a>
 					</div>
@@ -278,7 +280,7 @@
 						</div>
 					</div>
 					<div class="faq__link-wrap df">
-						<a class="faq__link btn btn_fill" href="/service">
+						<a class="faq__link btn btn_fill pressable" href="/service">
 							<span class="btn__name">Try online service</span>
 						</a>
 					</div>
@@ -286,6 +288,203 @@
 			</div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="footer__background-wrap"></div>
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__form-wrap df">
+					<form class="footer__form form" action="#" id="feedback">
+						<h2 class="form__title">Ask us online</h2>
+						<div class="form__input-wrapper">
+							<div class="form__input-list">
+								<div class="form__input-wrap">
+									<input class="form__input form__input_string" id="name" name="name" type="text">
+									<span class="form__input-name form__input-name_string">Your name</span>
+									<span class="form__input-line form__input-line_underline"></span>
+								</div>
+								<div class="form__input-wrap">
+									<input class="form__input form__input_string" id="email" name="email" type="email">
+									<span class="form__input-name form__input-name_string">Email to contact</span>
+									<span class="form__input-line form__input-line_underline"></span>
+									<span class="form__input-mark df">
+										<span class="form__input-mark-symbol">
+											<span class="icon-close"></span>
+										</span>
+									</span>
+								</div>
+								<div class="form__input-wrap">
+									<textarea class="form__input form__input_text" name="message" id="message"></textarea>
+									<span class="form__input-name form__input-name_text">Your message here</span>
+									<span class="form__input-line form__input-line_solid"></span>
+									<span class="form__input-mark df">
+										<span class="form__input-mark-symbol">!</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="form__submit-row df">
+							<div class="form__rechapcha-wrap">
+								<div class="g-recaptcha" data-sitekey="6LfAOk0lAAAAAG9jAGr3McDbaaqqqPdfwC7KjDAH"></div>
+							</div>
+							<div class="form__submit-wrap">
+								<button class="form__submit pressable btn btn_fill" type="submit" data-sitekey="6LfAOk0lAAAAAG9jAGr3McDbaaqqqPdfwC7KjDAH" data-callback='onSubmit' data-action='submit'>
+									<span class="btn__name">Send message</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="footer__table">
+					<div class="footer__table-row footer__table-row_1 df">
+						<div class="footer__table-column footer__table-column_1-1 df">
+							<div class="footer__table-content">
+								<div class="footer__table-logo-wrap">
+									<img class="footer__table-logo unselect" src="images/logos/logo_light.svg" alt="Code Juggernaut">
+								</div>
+								<div class="footer__table-text-wrap">
+									<p class="footer__table-text paragraph">Thank you for reading extension info! For questions or feedback, contact us using the form on our website. We're committed to improving our extension, so stay tuned for updates and new features. Happy coding!</p>
+								</div>
+							</div>
+						</div>
+						<div class="footer__table-column footer__table-column_1-2 df">
+							<div class="footer__table-video-wrap">
+								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uC0W1zvPBNs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="footer__table-row footer__table-row_2 df">
+						<div class="footer__table-column footer__table-column_2-1 df">
+							<nav class="footer__nav">
+								<div class="footer__nav-row df">
+									<div class="footer__nav-column footer__nav-column_1 df">
+										<div class="footer__nav-item-wrap">
+											<h3 class="footer__nav-list-name">Contact us in</h3>
+											<ul class="footer__nav-list">
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" data-link-type="tg/main" target="_blank">
+														<span class="icon-telegram"></span>
+														<span class="footer__nav-link-name">Telegram</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" data-link-type="inst/lifestyle" target="_blank">
+														<span class="icon-instagram"></span>
+														<span class="footer__nav-link-name">Instagram</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" data-link-type="vk/main" target="_blank">
+														<span class="icon-vk"></span>
+														<span class="footer__nav-link-name">VKontakte</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" data-link-type="gh/microsyxx" target="_blank">
+														<span class="icon-github"></span>
+														<span class="footer__nav-link-name">GitHub</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="https://syxx503.github.io/my-social" target="_blank">
+														<span class="icon-my-social"></span>
+														<span class="footer__nav-link-name">My Social</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__nav-column footer__nav-column_2 df">
+										<div class="footer__nav-item-wrap">
+											<h3 class="footer__nav-list-name">Configure Extension</h3>
+											<ul class="footer__nav-list">
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="/service?source=scripts">
+														<span class="icon-script"></span>
+														<span class="footer__nav-link-name">My scripts</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="/service?source=urls">
+														<span class="icon-linking"></span>
+														<span class="footer__nav-link-name">My URLs</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="/service?source=share-tools">
+														<span class="icon-share"></span>
+														<span class="footer__nav-link-name">Share tools</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="footer__nav-column footer__nav-column_3 df">
+										<div class="footer__nav-item-wrap">
+											<h3 class="footer__nav-list-name">Install for free</h3>
+											<ul class="footer__nav-list">
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable yandex-install unselect" href="#" target="_blank">
+														<span class="icon-chrome-ext"></span>
+														<span class="footer__nav-link-name">Chrome WebStore</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" target="_blank">
+														<span class="icon-opera"></span>
+														<span class="footer__nav-link-name">Opera Addons</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" target="_blank">
+														<span class="icon-mozilla-ext"></span>
+														<span class="footer__nav-link-name">Mozilla Addons</span>
+													</a>
+												</li>
+												<li class="footer__nav-item">
+													<a class="footer__nav-link pressable unselect" href="#" target="_blank">
+														<span class="icon-yandex"></span>
+														<span class="footer__nav-link-name">Yandex Extensions</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<div class="footer__table-column footer__table-column_2-2 df">
+							<div class="footer__link-wrap">
+								<div class="footer__link-item">
+									<a class="footer__link btn btn_fill pressable" href="/service">
+										<span class="footer__link-name btn__name">Our Service</span>
+									</a>
+								</div>
+								<div class="footer__link-item">
+									<a class="footer__link btn btn_border pressable" href="/partners?source=collaborate">
+										<span class="footer__link-name btn__name">Collaborate</span>
+										<span class="icon-people-group"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="copyright__row df">
+					<div class="copyright__column copyright__column_1 df">
+						<div class="copyright__rights">© Copyright synfaxx503 2023</div>
+					</div>
+					<div class="copyright__column copyright__column_2 df">
+						<div class="copyright__tin-number">TIN 9472218500</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="scroll-line"></div>
 	<noscript class="noscript">
 		<div class="noscript__wrapper df">
 			<div class="noscript__message df">
@@ -293,9 +492,29 @@
 			</div>
 		</div>
 	</noscript>
-	<div class="scroll-line"></div>
-	<div style="width:100%; height:170vh;"></div>
-	<div style="width:100%; height:170vh;"></div>
+	<script>
+		window.addEventListener("load", e => {
+			fetch("https://syxx503.github.io/my-social/links.json")
+			.then(response => response.text())
+			.then(data => {
+				let linksObj = JSON.parse(data);
+
+				document.querySelectorAll(`[data-link-type]`).forEach(a => {
+						let type = (a.getAttribute("data-link-type")).split("/");
+						let link = linksObj;
+
+						type.forEach(key => {
+							link = link[key];
+						});
+
+						if (link) {
+							a.setAttribute("href", link);
+						};
+				});
+			}).catch(error => console.error(error));
+		});
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LfAOk0lAAAAAG9jAGr3McDbaaqqqPdfwC7KjDAH"></script>
 	<script src="scripts/main.js"></script>
 </body>
 </html>
