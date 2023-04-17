@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- TODO -->
-<!-- Error/Warning в форме для input -->
 <html lang="en">
 <head>
 	<title>Code Juggernaut - Browser Manager</title>
@@ -292,49 +290,6 @@
 		<div class="footer__background-wrap"></div>
 		<div class="container">
 			<div class="footer__wrapper">
-				<div class="footer__form-wrap df">
-					<form class="footer__form form" action="#" id="feedback">
-						<h2 class="form__title">Ask us online</h2>
-						<div class="form__input-wrapper">
-							<div class="form__input-list">
-								<div class="form__input-wrap">
-									<input class="form__input form__input_string" id="name" name="name" type="text">
-									<span class="form__input-name form__input-name_string">Your name</span>
-									<span class="form__input-line form__input-line_underline"></span>
-								</div>
-								<div class="form__input-wrap">
-									<input class="form__input form__input_string" id="email" name="email" type="email">
-									<span class="form__input-name form__input-name_string">Email to contact</span>
-									<span class="form__input-line form__input-line_underline"></span>
-									<span class="form__input-mark df">
-										<span class="form__input-mark-symbol">
-											<span class="icon-close"></span>
-										</span>
-									</span>
-								</div>
-								<div class="form__input-wrap">
-									<textarea class="form__input form__input_text" name="message" id="message"></textarea>
-									<span class="form__input-name form__input-name_text">Your message here</span>
-									<span class="form__input-line form__input-line_solid"></span>
-									<span class="form__input-mark df">
-										<span class="form__input-mark-symbol">!</span>
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="form__submit-row df">
-							<div class="form__rechapcha-wrap">
-								<input id="g-recaptcha-response" name="g-recaptcha-response" type="hidden">
-								<div class="g-recaptcha" data-sitekey="6LfAOk0lAAAAAG9jAGr3McDbaaqqqPdfwC7KjDAH"></div>
-							</div>
-							<div class="form__submit-wrap">
-								<button class="form__submit pressable btn btn_fill" type="submit" data-sitekey="6LfAOk0lAAAAAG9jAGr3McDbaaqqqPdfwC7KjDAH" data-callback='onSubmit' data-action='submit'>
-									<span class="btn__name">Send message</span>
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
 				<div class="footer__table">
 					<div class="footer__table-row footer__table-row_1 df">
 						<div class="footer__table-column footer__table-column_1-1 df">
@@ -513,7 +468,6 @@
 			}).catch(error => console.error(error));
 		});
 	</script>
-	<script src="https://www.google.com/recaptcha/api.js?render=6LfAOk0lAAAAAG9jAGr3McDbaaqqqPdfwC7KjDAH"></script>
 	<script src="scripts/main.js"></script>
 </body>
 </html>
