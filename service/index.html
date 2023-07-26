@@ -22,7 +22,298 @@
 	<link media="screen" onload='if(media!="all") media="all"' rel="stylesheet" href="../styles/service.css">
 </head>
 <body>
-	
+	<main class="main">
+		<div class="main__wrapper">
+			<div class="main__row df">
+				<div class="main__column main__column_1 df">
+					<div class="main__sidebar sidebar sidebar_1 unselect df">
+						<div class="sidebar__wrapper df">
+							<div class="sidebar__column df">
+								<div class="sidebar__top">
+									<div class="sidebar__burger burger burger_1 pressable df">
+										<span class="burger__span burger__span_1"></span>
+										<span class="burger__span burger__span_2"></span>
+										<span class="burger__span burger__span_3"></span>
+									</div>
+								</div>
+								<div class="sidebar__bottom">
+									<nav class="sidebar__nav df">
+										<div class="sidebar__nav-item sidebar__nav-item_1 df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn sidebar__nav-btn_active pressable df" data-page="home">
+													<span class="sidebar__nav-btn-icon-wrap df">
+														<span class="sidebar__nav-btn-icon icon-home"></span>
+													</span>
+													<span class="sidebar__nav-name">Home</span>
+												</button>
+											</div>
+										</div>
+										<div class="sidebar__nav-item sidebar__nav-item_2 df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable df" data-page="plus">
+													<span class="sidebar__nav-btn-icon-wrap df">
+														<span class="sidebar__nav-btn-icon icon-plus"></span>
+													</span>
+													<span class="sidebar__nav-name">New Set</span>
+												</button>
+											</div>
+										</div>
+										<div class="sidebar__nav-item sidebar__nav-item_3 df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable df" data-page="scripts">
+													<span class="sidebar__nav-btn-icon-wrap df">
+														<span class="sidebar__nav-btn-icon icon-dev"></span>
+													</span>
+													<span class="sidebar__nav-name">My Scripts</span>
+												</button>
+											</div>
+										</div>
+										<div class="sidebar__nav-item sidebar__nav-item_4 df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable df" data-page="urls">
+													<span class="sidebar__nav-btn-icon-wrap df">
+														<span class="sidebar__nav-btn-icon icon-urls"></span>
+													</span>
+													<span class="sidebar__nav-name">My URLs</span>
+												</button>
+											</div>
+										</div>
+										<div class="sidebar__nav-item sidebar__nav-item_5 df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable df" data-page="share">
+													<span class="sidebar__nav-btn-icon-wrap df">
+														<span class="sidebar__nav-btn-icon icon-share_service"></span>
+													</span>
+													<span class="sidebar__nav-name">Share Tools</span>
+												</button>
+											</div>
+										</div>
+										<div class="sidebar__nav-item sidebar__nav-item_6 df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable df" data-page="settings">
+													<span class="sidebar__nav-btn-icon-wrap df">
+														<span class="sidebar__nav-btn-icon icon-settings"></span>
+													</span>
+													<span class="sidebar__nav-name">Settings</span>
+												</button>
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__column main__column_2 df">
+					<div class="main__content content">
+						<div class="content__wrapper">
+							<header class="content__header header">
+								<div class="header__wrapper">
+									<div class="header__row df">
+										<div class="header__column header__column_1 df">
+											<div class="header__logo-wrap">
+												<a class="header__logo-link pressable unselect" href="../">
+													<img class="header__logo" src="../images/logos/logo.svg" data-ondark='{"changeSrc":"../images/logos/logo_light.svg"}' data-onlight='{"changeSrc":"../images/logos/logo.svg"}' alt="Code Juggernaut">
+												</a>
+											</div>
+										</div>
+										<!-- <div class="header__column header__column_2 df"></div> -->
+									</div>
+								</div>
+							</header>
+							<div class="content__table">
+								<div class="content__preview">
+									<h1 class="content__title" id="title">You are at home</h1>
+									<div class="content__text-wrap">
+										<p class="content__text paragraph">This page can help you stay up-to-date with the news and your customize. Also JS sandbox is ready!</p>
+									</div>
+								</div>
+								<nav class="content__nav">
+									<div class="content__nav-row df">
+										<div class="content__tab-line"></div>
+										<div class="content__nav-column df">
+											<div class="content__nav-btn-wrap">
+												<button class="content__nav-btn content__nav-btn_active pressable" data-tab="home-news">
+													<span class="content__nav-btn-name">News</span>
+												</button>
+											</div>
+										</div>
+										<div class="content__nav-column df">
+											<div class="content__nav-btn-wrap">
+												<button class="content__nav-btn pressable" data-tab="home-sandbox">
+													<span class="content__nav-btn-name">Sandbox</span>
+												</button>
+											</div>
+										</div>
+										<!-- <div class="content__nav-column df">
+											<div class="content__nav-btn-wrap">
+												<button class="content__nav-btn pressable" data-tab="home-events">
+													<span class="content__nav-btn-name">Events</span>
+												</button>
+											</div>
+										</div> -->
+									</div>
+								</nav>
+								<div class="content__grid grid">
+									<div class="grid__wrapper">
+										<div class="grid__scrollpage" data-pos="home-news">
+											<div class="grid__page page" data-page="home">
+												<div class="page__tab-slider swiper">
+													<div class="page__tab-slider-wrapper swiper-wrapper df">
+														<div class="page__window swiper-slide" data-window="news" data-window-index="0">
+															<div class="page__window-wrapper news df">
+																<div class="news__slide-btn-wrap df">
+																	<button class="news__slide-btn swiper-button-prev pressable">
+																		<span class="icon-arrow-left"></span>
+																	</button>
+																</div>
+																<div class="news__slider swiper df">
+																	<div class="news__slider-wrapper swiper-wrapper df">
+																		<div class="news__slide news-slide swiper-slide">
+																			<div class="news-slide__wrapper df">
+																				<div class="news-slide__bg news-slide__bg_1"></div>
+																				<div class="news-slide__content">
+																					<div class="news-slide__date">05 25 2023</div>
+																					<h3 class="news-slide__title">New Version 2.0.0</h3>
+																					<p class="news-slide__subtext paragraph">We can update Juggernaut to high speed working and a lot of more...</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="news__slide news-slide swiper-slide">
+																			<div class="news-slide__wrapper df">
+																				<div class="news-slide__bg news-slide__bg_2"></div>
+																				<div class="news-slide__content">
+																					<div class="news-slide__date">06 01 2024</div>
+																					<h3 class="news-slide__title">More than 1kk users</h3>
+																					<p class="news-slide__subtext paragraph">One million people choose our extension. This is the funniest reviews...</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="news__slide news-slide swiper-slide">
+																			<div class="news-slide__wrapper df">
+																				<div class="news-slide__bg news-slide__bg_3"></div>
+																				<div class="news-slide__content">
+																					<div class="news-slide__date">05 25 2023</div>
+																					<h3 class="news-slide__title">New Version 2.0.0</h3>
+																					<p class="news-slide__subtext paragraph">We can update Juggernaut to high speed working and a lot of more...</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="news__slide-btn-wrap df">
+																	<button class="news__slide-btn swiper-button-next pressable">
+																		<span class="icon-arrow-right"></span>
+																	</button>
+																</div>
+															</div>
+														</div>
+														<div class="page__window swiper-slide" data-window="sandbox" data-window-index="1">
+															<div class="page__window-wrapper sandbox">
+																<div class="sandbox__wrapper">
+																	<div class="sandbox__areas-row df">
+																		<div class="sandbox__areas-column sandbox__areas-column_1 df">
+																			<div class="sandbox__areas-item">
+																				<h3 class="sandbox__area-title">Input</h3>
+																				<div class="sandbox__in-window df">
+																					<div class="sandbox__line-wrap">
+																						<div class="sandbox__line-item" data-sandbox-line="1">
+																							<span class="sandbox__line">1</span>
+																						</div>
+																					</div>
+																					<div class="sandbox__in-wrap">
+																						<textarea class="sandbox__in" id="sandboxIn"></textarea>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="sandbox__areas-column sandbox__areas-column_2 df">
+																			<div class="sandbox__areas-item">
+																				<h3 class="sandbox__area-title">Output</h3>
+																				<div class="sandbox__out-wrap">
+																					<iframe sandbox="allow-scripts allow-same-origin"></iframe>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- <div class="page__window swiper-slide" data-window="events"></div> -->
+													</div>
+												</div>
+											</div>
+											<!-- <div class="grid__page page page_hided" data-page="plus"></div>
+											<div class="grid__page page page_hided" data-page="scripts"></div>
+											<div class="grid__page page page_hided" data-page="urls"></div>
+											<div class="grid__page page page_hided" data-page="share"></div>
+											<div class="grid__page page page_hided" data-page="settings"></div> -->
+										</div>
+									</div>
+								</div>
+								<!-- <div class="content__tool tool" data-pos="home-news">
+									<div class="tool__wrapper">
+										<div class="tool__scroller">
+											<div class="tool__window tool__window_1" data-window="home">
+												<div class="tool__window-wrapper">
+													<div class="tool__window-content">
+														<div class="home">
+															<div class="home__slider"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tool__window tool__window_2" data-window="plus"></div>
+											<div class="tool__window tool__window_3" data-window="scripts"></div>
+											<div class="tool__window tool__window_4" data-window="urls"></div>
+											<div class="tool__window tool__window_5" data-window="share"></div>
+											<div class="tool__window tool__window_6" data-window="settings"></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__column main__column_3 df">
+					<div class="main__sidebar sidebar sidebar_2 df">
+						<div class="sidebar__wrapper df">
+							<div class="sidebar__column df">
+								<div class="sidebar__top"></div>
+								<div class="sidebar__bottom">
+									<nav class="sidebar__nav df">
+										<!-- <div class="sidebar__nav-item sidebar__nav-item_1 unselect df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable" data-page="lang">
+													<span class="sidebar__nav-btn-icon sidebar__nav-btn-icon_small icon-en_bold"></span>
+												</button>
+											</div>
+										</div> -->
+										<div class="sidebar__nav-item sidebar__nav-item_1 unselect df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn theme-switch" id="theme-switch" data-page="theme" aria-label="Color Theme Switch Button">
+													<span class="sidebar__nav-btn-icon theme-switch__icon icon-moon"></span>
+													<span class="sidebar__nav-btn-icon theme-switch__icon icon-sun"></span>
+													<span class="sidebar__nav-btn-icon theme-switch__icon_hided icon-moon"></span>
+												</button>
+											</div>
+										</div>
+										<div class="sidebar__nav-item sidebar__nav-item_2 unselect df">
+											<div class="sidebar__nav-btn-wrap">
+												<button class="sidebar__nav-btn pressable" data-page="faq">
+													<span class="sidebar__nav-btn-icon icon-question_bold"></span>
+												</button>
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 	<script src="../scripts/service.js"></script>
 </body>
 </html>
